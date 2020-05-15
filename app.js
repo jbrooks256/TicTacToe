@@ -22,40 +22,89 @@ function winCondition() {
   if (
     cells[0].textContent === cells[1].textContent &&
     cells[1].textContent === cells[2].textContent &&
-    cells[2].textContent === "X" || cells[2].textContent === "O"
+    cells[0].textContent != ""
+  ) {
+    alert("gg2ez");
+  }
+  if (
+    cells[3].textContent === cells[4].textContent &&
+    cells[4].textContent === cells[5].textContent &&
+    cells[3].textContent != ""
+  ) {
+    alert("gg2ez row 2");
+  }
+  if (
+    cells[6].textContent === cells[7].textContent &&
+    cells[7].textContent === cells[8].textContent &&
+    cells[6].textContent != ""
+  ) {
+    alert("gg2ez row 3");
+  }
+  if (
+    cells[0].textContent === cells[3].textContent &&
+    cells[3].textContent === cells[6].textContent &&
+    cells[0].textContent != ""
+  ) {
+    alert("gg2ez");
+  }
+  if (
+    cells[1].textContent === cells[4].textContent &&
+    cells[4].textContent === cells[7].textContent &&
+    cells[1].textContent != ""
+  ) {
+    alert("gg2ez");
+  }
+  if (
+    cells[2].textContent === cells[5].textContent &&
+    cells[5].textContent === cells[8].textContent &&
+    cells[2].textContent != ""
+  ) {
+    alert("gg2ez");
+  }
+  if (
+    cells[0].textContent === cells[4].textContent &&
+    cells[4].textContent === cells[8].textContent &&
+    cells[0].textContent != ""
+  ) {
+    alert("gg2ez");
+  }
+  if (
+    cells[6].textContent === cells[4].textContent &&
+    cells[4].textContent === cells[2].textContent &&
+    cells[6].textContent != ""
   ) {
     alert("gg2ez");
   }
 }
 
-cells[0];
-cells[1];
-cells[2];
+// cells[0];
+// cells[1];
+// cells[2];
 
-cells[3];
-cells[4];
-cells[5];
+// cells[3];
+// cells[4];
+// cells[5];
 
-cells[6];
-cells[7];
-cells[8];
+// cells[6];
+// cells[7];
+// cells[8];
 
-cells[0];
-cells[3];
-cells[6];
+// cells[0];
+// cells[3];
+// cells[6];
 
-cells[1];
-cells[4];
-cells[7];
+// cells[1];
+// cells[4];
+// cells[7];
 
-cells[2];
-cells[5];
-cells[8];
+// cells[2];
+// cells[5];
+// cells[8];
 
-cells[0];
-cells[4];
-cells[8];
+// cells[0];
+// cells[4];
+// cells[8];
 
-cells[6];
-cells[4];
-cells[2];
+// cells[6];
+// cells[4];
+// cells[2];
