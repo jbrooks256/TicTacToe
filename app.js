@@ -1,7 +1,5 @@
 let cells = document.querySelectorAll(".row > div");
 
-console.log(cells);
-
 let player = "X";
 
 for (let i = 0; i < cells.length; i++) {
@@ -17,6 +15,10 @@ function cellClicked() {
       player = "X";
     }
   }
+}
+
+function winCondition() {
+    
 }
 
 cells[0];
