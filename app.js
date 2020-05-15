@@ -9,6 +9,7 @@ for (let i = 0; i < cells.length; i++) {
 function cellClicked() {
   if (event.target.textContent === "") {
     event.target.textContent = player;
+    winCondition();
     if (player == "X") {
       player = "O";
     } else {
@@ -18,7 +19,13 @@ function cellClicked() {
 }
 
 function winCondition() {
-    
+  if (
+    cells[0].textContent === cells[1].textContent &&
+    cells[1].textContent === cells[2].textContent &&
+    cells[2].textContent === "X" || cells[2].textContent === "O"
+  ) {
+    alert("gg2ez");
+  }
 }
 
 cells[0];
