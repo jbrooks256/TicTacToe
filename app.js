@@ -1,6 +1,5 @@
 let cells = document.querySelectorAll(".row > div");
 let counter = 0;
-counter++;
 let player = "X";
 
 for (let i = 0; i < cells.length; i++) {
@@ -79,7 +78,7 @@ function winCondition() {
       cells[6].textContent != ""
     ) {
       alert("gg 2ez");
-    } else if (counter === 10) {
+    } else if (counter === 9) {
       alert("DRAW");
     }
   }
