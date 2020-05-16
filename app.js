@@ -22,7 +22,6 @@ function winCondition() {
   counter === 0;
   counter++;
   {
-    console.log(counter);
     if (
       cells[0].textContent === cells[1].textContent &&
       cells[1].textContent === cells[2].textContent &&
