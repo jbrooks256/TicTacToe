@@ -1,5 +1,6 @@
 let cells = document.querySelectorAll(".row > div");
-
+let counter = 0;
+counter++;
 let player = "X";
 
 for (let i = 0; i < cells.length; i++) {
@@ -19,64 +20,70 @@ function cellClicked() {
 }
 
 function winCondition() {
-  if (
-    cells[0].textContent === cells[1].textContent &&
-    cells[1].textContent === cells[2].textContent &&
-    cells[0].textContent != ""
-  ) {
-    alert("gg2ez");
-  }
-  if (
-    cells[3].textContent === cells[4].textContent &&
-    cells[4].textContent === cells[5].textContent &&
-    cells[3].textContent != ""
-  ) {
-    alert("gg2ez row 2");
-  }
-  if (
-    cells[6].textContent === cells[7].textContent &&
-    cells[7].textContent === cells[8].textContent &&
-    cells[6].textContent != ""
-  ) {
-    alert("gg2ez row 3");
-  }
-  if (
-    cells[0].textContent === cells[3].textContent &&
-    cells[3].textContent === cells[6].textContent &&
-    cells[0].textContent != ""
-  ) {
-    alert("gg2ez");
-  }
-  if (
-    cells[1].textContent === cells[4].textContent &&
-    cells[4].textContent === cells[7].textContent &&
-    cells[1].textContent != ""
-  ) {
-    alert("gg2ez");
-  }
-  if (
-    cells[2].textContent === cells[5].textContent &&
-    cells[5].textContent === cells[8].textContent &&
-    cells[2].textContent != ""
-  ) {
-    alert("gg2ez");
-  }
-  if (
-    cells[0].textContent === cells[4].textContent &&
-    cells[4].textContent === cells[8].textContent &&
-    cells[0].textContent != ""
-  ) {
-    alert("gg2ez");
-  }
-  if (
-    cells[6].textContent === cells[4].textContent &&
-    cells[4].textContent === cells[2].textContent &&
-    cells[6].textContent != ""
-  ) {
-    alert("gg2ez");
+  counter === 0;
+  counter++;
+  {
+    console.log(counter);
+    if (
+      cells[0].textContent === cells[1].textContent &&
+      cells[1].textContent === cells[2].textContent &&
+      cells[0].textContent != ""
+    ) {
+      alert("gg2ez");
+    }
+    if (
+      cells[3].textContent === cells[4].textContent &&
+      cells[4].textContent === cells[5].textContent &&
+      cells[3].textContent != ""
+    ) {
+      alert("gg2ez");
+    }
+    if (
+      cells[6].textContent === cells[7].textContent &&
+      cells[7].textContent === cells[8].textContent &&
+      cells[6].textContent != ""
+    ) {
+      alert("gg2ez");
+    }
+    if (
+      cells[0].textContent === cells[3].textContent &&
+      cells[3].textContent === cells[6].textContent &&
+      cells[0].textContent != ""
+    ) {
+      alert("gg2ez");
+    }
+    if (
+      cells[1].textContent === cells[4].textContent &&
+      cells[4].textContent === cells[7].textContent &&
+      cells[1].textContent != ""
+    ) {
+      alert("gg2ez");
+    }
+    if (
+      cells[2].textContent === cells[5].textContent &&
+      cells[5].textContent === cells[8].textContent &&
+      cells[2].textContent != ""
+    ) {
+      alert("gg2ez");
+    }
+    if (
+      cells[0].textContent === cells[4].textContent &&
+      cells[4].textContent === cells[8].textContent &&
+      cells[0].textContent != ""
+    ) {
+      alert("gg2ez");
+    }
+    if (
+      cells[6].textContent === cells[4].textContent &&
+      cells[4].textContent === cells[2].textContent &&
+      cells[6].textContent != ""
+    ) {
+      alert("gg2ez");
+    } else if (counter === 10) {
+      alert("DRAW");
+    }
   }
 }
-
 // cells[0];
 // cells[1];
 // cells[2];
